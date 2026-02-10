@@ -1,3 +1,211 @@
-<h1>김광주</h1>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김광주 | LLM 서비스 기획자 포트폴리오</title>
+    <style>
+        :root {
+            --primary-color: #3f51b5; /* 신뢰감을 주는 인디고 블루 */
+            --accent-color: #5c6bc0;
+            --bg-light: #f5f7fa;
+            --text-main: #263238;
+            --text-muted: #546e7a;
+            --white: #ffffff;
+        }
 
-<p>GAIDA-2nd</p>
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* --- Header --- */
+        header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .profile-title {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .profile-title span {
+            color: var(--primary-color);
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        /* --- Sections --- */
+        section {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            color: var(--primary-color);
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 24px;
+            background: var(--primary-color);
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+
+        /* --- Skills Grid --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-tag {
+            background: #eef2ff;
+            color: var(--primary-color);
+            padding: 12px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .skill-tag:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* --- Project Card --- */
+        .project-card {
+            border-left: 2px solid #e0e0e0;
+            padding-left: 25px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .project-card:hover {
+            border-left-color: var(--primary-color);
+        }
+
+        .project-card h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.3rem;
+        }
+
+        .project-meta {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 600px) {
+            .profile-title { font-size: 2.2rem; }
+            section { padding: 25px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 class="profile-title">김광주<span>.</span></h1>
+        <p class="subtitle">새싹(Seessac) LLM 서비스 기획자 과정</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            단순히 유행하는 기술을 나열하는 것이 아니라, <strong>비즈니스의 가려운 곳을 긁어주는 솔루션</strong>을 기획합니다. 
+            LLM의 가능성을 깊이 이해하고 n8n을 통한 자동화, RAG를 활용한 지식 베이스 구축 등 실질적인 기술 구현 흐름을 아는 기획자로 성장하고 있습니다.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Core Stack</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">n8n Automation</div>
+            <div class="skill-tag">RAG Architecture</div>
+            <div class="skill-tag">CLI Environment</div>
+            <div class="skill-tag">Git / GitHub</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Key Projects</h2>
+        
+        <div class="project-card">
+            <div class="project-meta">Workflow Automation</div>
+            <h3>n8n 기반 업무 자동화 서비스 기획</h3>
+            <p>LLM과 n8n을 결합하여 반복적인 문서 요약 및 메신저 알림 워크플로우를 설계했습니다. 기획자로서 데이터의 흐름(Flow)을 직접 설계하고 검증했습니다.</p>
+        </div>
+
+        <div class="project-card">
+            <div class="project-meta">Information Retrieval</div>
+            <h3>사내 지식 베이스 RAG 챗봇 구축 프로젝트</h3>
+            <p>방대한 사내 문서를 효율적으로 검색하고 답변하는 RAG 시스템을 기획했습니다. 프롬프트 엔지니어링을 통해 답변의 정확도를 높이는 로직을 설계했습니다.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📧 Email: <a href="mailto:kjkim@example.com">kjkim@example.com</a></p>
+        <p>📂 GitHub: <a href="https://github.com/kwangju-kim" target="_blank">github.com/kwangju-kim</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Kim Kwang-ju. Powered by Git Pages.</p>
+    </footer>
+</div>
+
+</body>
+</html>
